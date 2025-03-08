@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../my-portfolio/css/style.css">
+  <link rel="stylesheet" href="../my-portfolio/css/about.css">
+  <link rel="stylesheet" href="../my-portfolio/css/skills.css">
+  <link rel="stylesheet" href="../my-portfolio/css/services.css">
+  <link rel="stylesheet" href="../my-portfolio/css/projects.css">
+  <link rel="stylesheet" href="../my-portfolio/css/contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYNO</title>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="content-container">
+      <!-- Kept as separate elements but with a container for animation synchronization -->
+      <div class="title-container">
+        <h1 class="animated-title" id="title-first">SYNO THE</h1>
+        <h1 class="animated-title" id="title-second">DEVELOPER</h1>
+      </div>
+      <p class="animated-tagline">
+        Web/App&nbsp;Development&nbsp;-&nbsp;Your&nbsp;idea,&nbsp;My&nbsp;Code
+      </p>
+    </div>
+  </div>
+
+  <!-- About Card Section -->
+  <div class="about-card">
+    <h2>About Me</h2>
+    <div class="about-content" id="aboutContent">
+      <span id="typingText"></span>
+      <span class="typing-cursor"></span>
+    </div>
+    <button class="read-more" id="readMoreBtn">Read More</button>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="skills-section">
+    <h2 class="skills-title">My Skills</h2>
+    <div class="skills-container" id="skillsContainer">
+      <!-- Skill Cards -->
+      <div class="skill-card">
+        <div class="skill-icon">💻</div>
+        <div class="skill-name">React</div>
+        <div class="skill-tooltip">Expert in building responsive, efficient React applications with Redux and modern React hooks.</div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon">🖥️</div>
+        <div class="skill-name">Node.js</div>
+        <div class="skill-tooltip">Building scalable backend solutions with Express, MongoDB, and RESTful APIs.</div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon">📱</div>
+        <div class="skill-name">Flutter</div>
+        <div class="skill-tooltip">Cross-platform mobile app development with beautiful UI and native performance.</div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon">☁️</div>
+        <div class="skill-name">AWS</div>
+        <div class="skill-tooltip">Cloud infrastructure design and deployment including Lambda, S3, EC2, and DynamoDB.</div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon">🔄</div>
+        <div class="skill-name">CI/CD</div>
+        <div class="skill-tooltip">Automated testing and deployment with GitHub Actions, Jenkins, and Docker.</div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">UI/UX</div>
+        <div class="skill-tooltip">Creating intuitive user experiences with Figma, user testing, and responsive design.</div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon">🔒</div>
+        <div class="skill-name">Security</div>
+        <div class="skill-tooltip">Implementing best practices for web security, authentication, and data protection.</div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon">📊</div>
+        <div class="skill-name">Data Analysis</div>
+        <div class="skill-tooltip">Extracting insights from data using Python, SQL, and visualization tools.</div>
+      </div>
+    </div>
+    
+    <!-- Scroll Navigation -->
+    <div class="scroll-nav">
+      <button class="scroll-btn" id="scrollLeft">&#8592;</button>
+      <button class="scroll-btn" id="scrollRight">&#8594;</button>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+<div class="services-section">
+    <h2 class="services-title">My Services</h2>
+    <div class="services-container">
+      <!-- Web Development/Design Card -->
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3 class="service-name">Web Development & Design</h3>
+        <p class="service-description">
+          I craft responsive, high-performance websites that deliver exceptional user experiences. 
+          From dynamic e-commerce platforms to sleek corporate sites, I combine cutting-edge 
+          frontend technologies with robust backend solutions. My development process emphasizes 
+          clean code, SEO optimization, and accessibility standards. I specialize in React, 
+          Node.js, and modern JavaScript frameworks to create fast, scalable web applications 
+          tailored to your specific business needs. Every project begins with thoughtful UI/UX 
+          design that balances aesthetic appeal with intuitive functionality.
+        </p>
+      </div>
+      
+      <!-- Mobile/App Development Card -->
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3 class="service-name">Mobile & App Development</h3>
+        <p class="service-description">
+          I develop cross-platform mobile applications that provide native-like experiences across 
+          iOS and Android devices. Using Flutter and React Native, I build apps that are both 
+          beautiful and performant. My expertise extends to implementing complex features like 
+          real-time synchronization, offline functionality, push notifications, and secure 
+          authentication. I focus on optimizing app performance, minimizing battery consumption, 
+          and creating intuitive interfaces that users love. From concept to deployment on app 
+          stores, I handle the entire development lifecycle with meticulous attention to detail.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Projects Section -->
+<div class="projects-section">
+    <h2 class="projects-title">My Projects</h2>
+    <div class="projects-container">
+      <!-- First Row -->
+      <div class="project-card">
+        <h3 class="project-name">E-Commerce Platform</h3>
+        <p class="project-description">
+          A full-featured online store built with React and Node.js. Features include product search, 
+          user authentication, shopping cart, payment processing, and admin dashboard.
+        </p>
+        <a href="#" class="visit-btn">Visit</a>
+      </div>
+      
+      <div class="project-card">
+        <h3 class="project-name">Task Management App</h3>
+        <p class="project-description">
+          A Flutter-based productivity app that helps users organize tasks, set reminders, 
+          and track progress. Includes cloud sync and collaborative features.
+        </p>
+        <a href="#" class="visit-btn">Visit</a>
+      </div>
+      
+      <div class="project-card">
+        <h3 class="project-name">Portfolio Website</h3>
+        <p class="project-description">
+          A responsive portfolio website for a photographer showcasing their work with 
+          image galleries, contact form, and blog functionality.
+        </p>
+        <a href="#" class="visit-btn">Visit</a>
+      </div>
+      
+      <!-- Second Row -->
+      <div class="project-card">
+        <h3 class="project-name">Real Estate Listings</h3>
+        <p class="project-description">
+          A property listing application with search filters, interactive maps, 
+          virtual tours, and automated property valuation algorithms.
+        </p>
+        <a href="#" class="visit-btn">Visit</a>
+      </div>
+      
+      <div class="project-card">
+        <h3 class="project-name">Health & Fitness Tracker</h3>
+        <p class="project-description">
+          An intuitive mobile app for tracking workouts, nutrition, and wellness metrics.
+          Features include progress visualization and personalized recommendations.
+        </p>
+        <a href="#" class="visit-btn">Visit</a>
+      </div>
+      
+      <div class="project-card">
+        <h3 class="project-name">Educational Platform</h3>
+        <p class="project-description">
+          An online learning platform with course management, video lectures,
+          interactive quizzes, and student progress tracking capabilities.
+        </p>
+        <a href="#" class="visit-btn">Visit</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <h2 class="contact-title">Contact Me</h2>
+    <p class="contact-subtitle">Let's discuss your project and bring your ideas to life</p>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-detail">
+            <h3>Email</h3>
+            <p>nkomonkululeko021@gmail.com</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div class="contact-detail">
+            <h3>Phone</h3>
+            <p>+27(0)67 681 6790</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">🌍</div>
+          <div class="contact-detail">
+            <h3>Location</h3>
+            <p>Durban, Kwa-Zulu Natal</p>
+          </div>
+        </div>
+        
+        <div class="social-links">
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">GitHub</a>
+          <a href="#" class="social-link">Twitter</a>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; 2025 SYNO THE DEVELOPER. All rights reserved.</p>
+  </footer>
+
+  <script src="../my-portfolio/js/main.js"></script>
+  <script src="../my-portfolio/js/contact.js"></script>
+</body>
+</html>

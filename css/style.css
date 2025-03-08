@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          #3c3c3c 0 180deg
+        )
+        calc(0.5 * 200px) calc(0.5 * 200px * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        #1d1d1d 0 60deg,
+        #4e4f51 0 120deg,
+        #3c3c3c 0 180deg
+      );
+    background-size: 200px calc(200px * 0.577);
+    color: #fff;
+}
+
+/* Fullscreen Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70vh;
+    padding-left: 5rem;
+}
+
+/* Content Styling */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Keep left alignment */
+}
+
+/* Title Animation */
+.animated-title {
+    font-size: 4rem;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 1rem; /* Add spacing below the title */
+}
+
+.animated-title span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* Slide-up animation with shadow */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    }
+}
+
+/* Tagline Styling */
+.animated-tagline {
+    font-size: 1.5rem;
+    opacity: 1;
+    margin-top: 0.5rem; /* Space below title */
+}
+
+.animated-tagline span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+/* Fast slide-in from right to left */
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-left: 2rem;
+    }
+    
+    .animated-title {
+        font-size: 2.5rem;
+    }
+
+    .animated-tagline {
+        font-size: 1.2rem;
+    }
+}

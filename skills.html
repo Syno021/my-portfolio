@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills Showcase</title>
+    <link rel="stylesheet" href="../my-portfolio/css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow-y: auto;  
+            background: repeating-conic-gradient(
+                from 30deg,
+                #0000 0 120deg,
+                #3c3c3c 0 180deg
+                )
+                calc(0.5 * 200px) calc(0.5 * 200px * 0.577),
+            repeating-conic-gradient(
+                from 30deg,
+                #1d1d1d 0 60deg,
+                #4e4f51 0 120deg,
+                #3c3c3c 0 180deg
+            );
+            background-size: 200px calc(200px * 0.577);
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 10% 20px;
+            background-color: transparent;
+            text-align: center;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: white;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-card {
+            background-color: #3c3c3c;
+            border: 2px solid #1d1d1d;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            height: 100%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+        }
+        
+        .skill-icon i {
+            font-size: 30px;
+            color: white;
+        }
+        
+        .skill-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .skill-description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+        
+        .proficiency {
+            margin-top: 15px;
+            height: 8px;
+            background-color: #2a2a2a;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .proficiency-level {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+            border-radius: 4px;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Technical Skills</h1>
+            <p class="subtitle">A showcase of my programming and development expertise</p>
+        </header>
+        
+        <div class="skills-grid">
+            <!-- Ionic Angular -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-angular"></i>
+                </div>
+                <h2 class="skill-title">Ionic Angular</h2>
+                <p class="skill-description">
+                    I have extensive experience with Ionic Angular for cross-platform mobile application development. 
+                    I can build performant hybrid mobile applications that work seamlessly across iOS and Android 
+                    using Angular's powerful component-based architecture combined with Ionic's UI components.
+                </p>
+                <div class="proficiency">
+                    <div class="proficiency-level" style="width: 90%"></div>
+                </div>
+            </div>
+            
+            <!-- HTML, CSS, JS -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h2 class="skill-title">HTML, CSS & JavaScript</h2>
+                <p class="skill-description">
+                    I am proficient in the core web technologies: HTML5 for structure, CSS3 for styling and animations, 
+                    and JavaScript for interactivity. I can create responsive, accessible, and modern web interfaces 
+                    with attention to cross-browser compatibility and performance optimization.
+                </p>
+                <div class="proficiency">
+                    <div class="proficiency-level" style="width: 95%"></div>
+                </div>
+            </div>
+            
+            <!-- TypeScript -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h2 class="skill-title">TypeScript</h2>
+                <p class="skill-description">
+                    I leverage TypeScript to write more maintainable and robust JavaScript code, taking advantage of 
+                    static typing, interfaces, and advanced object-oriented programming features. My TypeScript 
+                    experience enhances development workflow through better tooling, early error detection, and 
+                    improved code organization.
+                </p>
+                <div class="proficiency">
+                    <div class="proficiency-level" style="width: 85%"></div>
+                </div>
+            </div>
+            
+            <!-- PHP -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-php"></i>
+                </div>
+                <h2 class="skill-title">PHP</h2>
+                <p class="skill-description">
+                    With my PHP skills, I develop dynamic server-side applications and websites. I can create 
+                    data-driven web solutions, implement secure user authentication systems, handle form processing,
+                    and integrate with databases. I'm familiar with modern PHP practices and common frameworks.
+                </p>
+                <div class="proficiency">
+                    <div class="proficiency-level" style="width: 80%"></div>
+                </div>
+            </div>
+            
+            <!-- Node.js & React.js -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <h2 class="skill-title">Node.js & React.js</h2>
+                <p class="skill-description">
+                    I have introductory knowledge of Node.js for server-side JavaScript development and React.js
+                    for building user interfaces. While my experience in this area is growing, I understand the
+                    fundamentals of Node's event-driven architecture and React's component-based approach to
+                    creating interactive UIs.
+                </p>
+                <div class="proficiency">
+                    <div class="proficiency-level" style="width: 40%"></div>
+                </div>
+            </div>
+            
+            <!-- Java -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h2 class="skill-title">Java (JSP & Spring Boot)</h2>
+                <p class="skill-description">
+                    My Java expertise includes working with JavaServer Pages (JSP) for dynamic web content 
+                    and Spring Boot for creating standalone, production-grade applications. I can develop 
+                    robust back-end systems, RESTful APIs, and enterprise-level applications using Java's 
+                    object-oriented approach and Spring's extensive framework features.
+                </p>
+                <div class="proficiency">
+                    <div class="proficiency-level" style="width: 75%"></div>
+                </div>
+            </div>
+            
+            <!-- C# -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-hashtag"></i>
+                </div>
+                <h2 class="skill-title">C# (MVC Framework)</h2>
+                <p class="skill-description">
+                    Using C# and the ASP.NET MVC framework, I build scalable web applications with clean 
+                    separation of concerns. I can implement complex business logic, create data-driven 
+                    web applications, and develop RESTful services with Entity Framework for data access
+                    and manipulation.
+                </p>
+                <div class="proficiency">
+                    <div class="proficiency-level" style="width: 70%"></div>
+                </div>
+            </div>
+            
+            <!-- Firebase -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h2 class="skill-title">Firebase</h2>
+                <p class="skill-description">
+                    I utilize Firebase to develop modern web and mobile applications with real-time 
+                    database capabilities, user authentication, cloud storage, and hosting. My experience 
+                    with Firebase enables me to create scalable applications with powerful back-end 
+                    functionalities without maintaining server infrastructure.
+                </p>
+                <div class="proficiency">
+                    <div class="proficiency-level" style="width: 65%"></div>
+                </div>
+            </div>
+            
+            <!-- MySQL -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h2 class="skill-title">MySQL</h2>
+                <p class="skill-description">
+                    I am skilled in MySQL database design, management, and optimization. I can create 
+                    efficient database schemas, write complex SQL queries, implement proper indexing 
+                    strategies, and ensure data integrity. My knowledge extends to database normalization 
+                    principles and best practices for secure and performant data storage.
+                </p>
+                <div class="proficiency">
+                    <div class="proficiency-level" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 SYNO THE DEVELOPER. All rights reserved.</p>
+    </footer>
+</body>
+<script src="../my-portfolio/js/nav-loader.js"></script>
+</html>

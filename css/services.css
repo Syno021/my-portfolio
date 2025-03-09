@@ -15,12 +15,12 @@
   .services-title::after {
     content: '';
     position: absolute;
-    width: 60px;
-    height: 3px;
-    background-color: #4e4f51;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
   }
   
   .services-container {
